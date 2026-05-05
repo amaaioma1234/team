@@ -218,7 +218,6 @@ function validateRegister() {
     let user = document.getElementById("reg-user");
     let pass = document.getElementById("reg-pass");
     let confirm = document.getElementById("reg-confirm");
-    let msg = document.getElementById("register-message");
 
     if (!name || !email || !user || !pass || !confirm) return false;
 
@@ -239,11 +238,6 @@ function validateRegister() {
 
     localStorage.setItem("username", user.value);
     localStorage.setItem("password", pass.value);
-
-    if (msg) {
-        msg.textContent = "Registration Successful! You can login now.";
-        msg.style.color = "green";
-    }
 
     alert("Account created for " + name.value);
     window.location.href = "index.html";
