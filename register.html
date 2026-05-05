@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Foodies Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img id="logo" src="images/logo.png" height="160">
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<section class="contact-container">
+    <div class="contact-form">
+        <h2 style="text-align: center;">Create Account</h2>
+        <form id="registerForm" onsubmit="return validateRegister()">
+            <div class="form-group">
+                <label for="reg-name">Full Name</label>
+                <input type="text" id="reg-name" placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="reg-email">Email Address</label>
+                <input type="email" id="reg-email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="reg-user">Username</label>
+                <input type="text" id="reg-user" placeholder="Choose a username">
+            </div>
+            
+            <div class="form-group">
+                <label for="reg-pass">Password</label>
+                <input type="password" id="reg-pass" placeholder="At least 6 characters">
+            </div>
+
+            <div class="form-group">
+                <label for="reg-confirm">Confirm Password</label>
+                <input type="password" id="reg-confirm" placeholder="Confirm your password">
+            </div>
+
+            <button type="submit" class="submit-btn">Register Now</button>
+            <p style="text-align: center; margin-top: 15px;">
+                Already have an account? <a href="login.html" style="color: #ff6600; text-decoration: none;">Login here</a>
+            </p>
+        </form>
+        <div id="register-message" class="form-message"></div>
+    </div>
+</section>
+
+<button id="ThemeSwitch" onclick="toggleTheme()">Switch Theme</button>
+
+<footer style="text-align: center;">
+    <p>© 2026 Foodies Hub</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

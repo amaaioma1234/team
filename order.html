@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order - Foodies Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <img id="logo" src="images/logo.png" height="160">
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<section class="menu-section">
+    <h2>Order</h2>
+    
+    <div id="Order-menu" class="list">
+        <div class="food-card order-item">
+            <img src="images/burger.png" height="80">
+            <h3>Burger</h3>
+            <p>$5</p>
+            <div class="quantity-control">
+                <button class="quantitybutton" data-item="Burger" data-price="5" data-change="-1">-</button>
+                <span class="value" id="qtyBurger">0</span>
+                <button class="quantitybutton" data-item="Burger" data-price="5" data-change="1">+</button>
+            </div>
+        </div>
+
+        <div class="food-card order-item">
+            <img src="images/pizza.png" height="80">
+            <h3>Pizza</h3>
+            <p>$8</p>
+            <div class="quantity-control">
+                <button class="quantitybutton" data-item="Pizza" data-price="8" data-change="-1">-</button>
+                <span class="value" id="qtyPizza">0</span>
+                <button class="quantitybutton" data-item="Pizza" data-price="8" data-change="1">+</button>
+            </div>
+        </div>
+
+        <div class="food-card order-item">
+            <img src="images/pasta.png" height="80">
+            <h3>Pasta</h3>
+            <p>$6</p>
+            <div class="quantity-control">
+                <button class="quantitybutton" data-item="Pasta" data-price="6" data-change="-1">-</button>
+                <span class="value" id="qtyPasta">0</span>
+                <button class="quantitybutton" data-item="Pasta" data-price="6" data-change="1">+</button>
+            </div>
+        </div>
+
+        <div class="food-card order-item">
+            <img src="images/loaded fries.png" height="80">
+            <h3>Loaded Fries</h3>
+            <p>$4</p>
+            <div class="quantity-control">
+                <button class="quantitybutton" data-item="Loaded Fries" data-price="4" data-change="-1">-</button>
+                <span class="value" id="qtyLoaded Fries">0</span>
+                <button class="quantitybutton" data-item="Loaded Fries" data-price="4" data-change="1">+</button>
+            </div>
+        </div>
+
+        <div class="food-card order-item">
+            <img src="images/chicken wings.png" height="80">
+            <h3>Chicken Wings</h3>
+            <p>$11</p>
+            <div class="quantity-control">
+                <button class="quantitybutton" data-item="Chicken Wings" data-price="11" data-change="-1">-</button>
+                <span class="value" id="qtyChicken Wings">0</span>
+                <button class="quantitybutton" data-item="Chicken Wings" data-price="11" data-change="1">+</button>
+            </div>
+        </div>
+
+        <div class="food-card order-item">
+            <img src="images/drinks.png" height="80">
+            <h3>Drinks</h3>
+            <p>$2</p>
+            <div class="quantity-control">
+                <button class="quantitybutton" data-item="Drinks" data-price="2" data-change="-1">-</button>
+                <span class="value" id="qtyDrinks">0</span>
+                <button class="quantitybutton" data-item="Drinks" data-price="2" data-change="1">+</button>
+            </div>
+        </div>
+
+        <div class="food-card order-item">
+            <img src="images/cheese cake.png" height="80">
+            <h3>Cheese Cake</h3>
+            <p>$4</p>
+            <div class="quantity-control">
+                <button class="quantitybutton" data-item="Cheese Cake" data-price="4" data-change="-1">-</button>
+                <span class="value" id="qtyCheese Cake">0</span>
+                <button class="quantitybutton" data-item="Cheese Cake" data-price="4" data-change="1">+</button>
+            </div>
+        </div>
+
+        <div class="food-card order-item">
+            <img src="images/hotdog.png" height="80">
+            <h3>Hotdog</h3>
+            <p>$5</p>
+            <div class="quantity-control">
+                <button class="quantitybutton" data-item="Hotdog" data-price="5" data-change="-1">-</button>
+                <span class="value" id="qtyHotdog">0</span>
+                <button class="quantitybutton" data-item="Hotdog" data-price="5" data-change="1">+</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-summary">
+        <h3>Order Summary</h3>
+        <ul id="order-list"></ul>
+        <p><strong>Total: $<span id="total-price">0</span></strong></p>
+        <button id="confirm-order">Confirm Order</button>
+        <p id="order-feedback" class="form-message"></p>
+    </div>
+</section>
+
+<button id="ThemeSwitch" onclick="toggleTheme()">Switch Theme</button>
+
+<footer style="text-align: center;">
+    <p>© 2026 Foodies Hub</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
